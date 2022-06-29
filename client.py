@@ -17,11 +17,8 @@ def on_close(ws):
 
 
 def on_open(ws):
-    # ws.send(
-    #     "{\"action\":\"Login\",\"login\":\"mathLogin\",\"password\":\"%wPp7VO6k7ump{BP4mu2rm4w?p|J5N%P\",\"roomid\":\"1\"}")
-    # ws.send(
-    #     f'Дима лох')
-    ws.send(json.dumps([0,1,2,3,4,5]))
+    # ws.send(json.dumps([0,1,2,3,4,5]))
+    ws.send("{\"action\":\"Login\"}")
 
 if __name__ == "__main__":
 
